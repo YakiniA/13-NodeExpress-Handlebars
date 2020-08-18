@@ -1,8 +1,8 @@
-li {
+/* li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
-}
+} */
 
 .label {
   font-weight: bold;
@@ -14,6 +14,18 @@ li {
   background: aqua;
 }
 
-.form-group {
+/* .form-group {
   margin-bottom: 5px;
+} */
+
+#notdevoured{
+  float:left;
+}
+
+#devoured{
+  float:right;
+}
+
+.createBurger{
+  clear: both;
 }

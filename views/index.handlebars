@@ -1,8 +1,8 @@
 <h1>Burger!</h1>
 
-<h2>Burgers that are not devoured!</h2>
+<h2 >Burgers that are not devoured!</h2>
 
-<ul>
+<ul id= "notdevoured">
   {{#each burgerData}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=false}}
@@ -10,9 +10,9 @@
   {{/each}}
 </ul>
 
-<h2>Burgers that are devoured!</h2>
+{{!-- <h2 >Burgers that are devoured!</h2> --}}
 
-<ul>
+<ul id= "devoured">
   {{#each burgerData}}
     {{#if devoured}}
       {{> burgers/burger-block devoured=true}}
@@ -20,7 +20,8 @@
   {{/each}}
 </ul>
 
-<h2>Add Your Burger</h2>
+<div class= "createBurger">
+<h2 >Add Your Burger</h2>
 {{!-- <form class="create-form">
 
   <div class="form-group"> --}}
@@ -38,4 +39,5 @@
 
 {{!-- <input type="submit" value="Submit"> --}}
   <button id="submitBtn" type="submit">Submit</button>
+  </div>
 {{!-- </form> --}}
