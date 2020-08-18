@@ -20,11 +20,12 @@
 
 #notdevoured{
   float:left;
+  margin-right: 300px;
 }
 
-#devoured{
+/* #devoured{
   float:right;
-}
+} */
 
 .createBurger{
   clear: both;
