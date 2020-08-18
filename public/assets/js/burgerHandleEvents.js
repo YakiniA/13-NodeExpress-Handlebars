@@ -21,12 +21,12 @@ $(function() {
     );
   });
 
-  $(".create-form").on("submit", function(event) {
+  $("#submitBtn").on("click", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
     var newBurger = {
-      name: $("#ca").val().trim(),
+     name: $("#ca").val().trim(),
     };
 
     // Send the POST request.

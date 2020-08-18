@@ -51,14 +51,18 @@ var orm = {
     });
   },
    create: function(table, cols, vals, cb) {
-     var queryString = "INSERT INTO " + table;
+     var boolean = false;
+     var queryString = `INSERT INTO ${table} (${cols}) VALUES ('${vals}', ${boolean});`
 
-     queryString += " (";
-     queryString += cols.toString();
-     queryString += ") ";
-     queryString += "VALUES (";
-     queryString += printQuestionMarks(vals.length);
-     queryString += ") ";
+    //  queryString += " (";
+    //  queryString += cols.toString();
+    //  queryString += ", ";
+    //  queryString += "devoured";
+    //  queryString += ") ";
+    //  queryString += "VALUES (";
+    //  queryString += vals;
+    //  queryString += vals;
+    //  queryString += ") ";
 
      console.log(queryString);
 
