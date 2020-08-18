@@ -2,23 +2,23 @@
 
 <h2 >Burgers that are not devoured!</h2>
 
-<ul id= "notdevoured">
+<ol id= "notdevoured">
   {{#each burgerData}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=false}}
     {{/unless}}
   {{/each}}
-</ul>
+</ol>
 
 {{!-- <h2 >Burgers that are devoured!</h2> --}}
 
-<ul id= "devoured">
+<ol id= "devoured">
   {{#each burgerData}}
     {{#if devoured}}
       {{> burgers/burger-block devoured=true}}
     {{/if}}
   {{/each}}
-</ul>
+</ol>
 
 <div class= "createBurger">
 <h2 >Add Your Burger</h2>
