@@ -12,13 +12,13 @@
 
 {{!-- <h2 >Burgers that are devoured!</h2> --}}
 
-<ol id= "devoured">
+<div id= "devoured">
   {{#each burgerData}}
     {{#if devoured}}
       {{> burgers/burger-block devoured=true}}
     {{/if}}
   {{/each}}
-</ol>
+</div> 
 
 <div class= "createBurger">
 <h2 >Add Your Burger</h2>
