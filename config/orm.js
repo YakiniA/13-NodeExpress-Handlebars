@@ -54,16 +54,6 @@ var orm = {
      var boolean = false;
      var queryString = `INSERT INTO ${table} (${cols}) VALUES ('${vals}', ${boolean});`
 
-    //  queryString += " (";
-    //  queryString += cols.toString();
-    //  queryString += ", ";
-    //  queryString += "devoured";
-    //  queryString += ") ";
-    //  queryString += "VALUES (";
-    //  queryString += vals;
-    //  queryString += vals;
-    //  queryString += ") ";
-
      console.log(queryString);
 
      connection.query(queryString, vals, function(err, result) {
@@ -74,24 +64,26 @@ var orm = {
        cb(result);
      });
    },
-   // An example of objColVals would be {name: panther, sleepy: true}
-  // update: function(table, objColVals, condition, cb) {
-  //   var queryString = "UPDATE " + table;
+   //An example of objColVals would be {name: panther, sleepy: true}
+   update: function(table, objColVals, condition, cb) {
 
-  //   queryString += " SET ";
-  //   queryString += objToSql(objColVals);
-  //   queryString += " WHERE ";
-  //   queryString += condition;
+    var queryString = `UPDATE ${table} SET ${objToSql(objColVals)} WHERE ${condition}`
+    //  var queryString = "UPDATE " + table;
 
-  //   console.log(queryString);
-  //   connection.query(queryString, function(err, result) {
-  //     if (err) {
-  //       throw err;
-  //     }
+    //  queryString += " SET ";
+    //  queryString += objToSql(objColVals);
+    //  queryString += " WHERE ";
+    //  queryString += condition;
 
-  //     cb(result);
-  //   });
-  // }
+     console.log(queryString);
+     connection.query(queryString, function(err, result) {
+       if (err) {
+         throw err;
+       }
+
+       cb(result);
+     });
+   }
 };
 
 // Export the orm object for the model (cat.js).
