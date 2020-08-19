@@ -1,6 +1,12 @@
-<h1>Burger!</h1>
+ 
+  <img src="../assets/css/burger1.jpg"  width="30%" class="img-responsive rounded float-left pic1" alt="pictureburger">
 
-<h2 >Burgers that are not devoured!</h2>
+  <img src="../assets/css/burger2.jpg"  width="30%" class="img-responsive rounded float-right pic2" alt="pictureburger">
+   
+
+<h1>Eat-Da-Burger!!</h1> 
+
+<h4>Burgers ready to be devoured!
 
 <ol id= "notdevoured">
   {{#each burgerData}}
@@ -9,8 +15,9 @@
     {{/unless}}
   {{/each}}
 </ol>
+</h4>
 
-{{!-- <h2 >Burgers that are devoured!</h2> --}}
+<h4>Burgers that are devoured!
 
 <div id= "devoured">
   {{#each burgerData}}
@@ -19,6 +26,7 @@
     {{/if}}
   {{/each}}
 </div> 
+</h4>
 
 <div class= "createBurger">
 <h2 >Add Your Burger</h2>
@@ -41,3 +49,6 @@
   <button id="submitBtn" type="submit">Submit</button>
   </div>
 {{!-- </form> --}}
+
+
+

@@ -4,6 +4,61 @@
   background: #faebd7;
 } */
 
+/* body {
+  background-image: url("pictureburger.jpg");
+  /* background-size: cover; */
+  /* background-position:center; */
+ /* background-size: auto;
+  background-repeat: no-repeat; 
+} */
+
+  
+.img-responsive{
+  margin-top: 5%;
+  margin-right: 2%;
+  height: 100%; 
+}
+
+body{
+margin: 0 auto;
+}
+
+/*.pic1{
+  float:left;
+}
+
+.pic2{
+  float:right; 
+/* } */
+
+/* body {
+  background-image:url("pictureburger4.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+
+  background-size: 20%;
+  }
+   */
+
+/* #bg{
+  position:fixed;
+  top:-50%;
+  left:-50%;
+  width:200%;
+  height:200%;
+}
+
+#bg img{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin: auto;
+  min-width:50%;
+  min-height: 50%;
+} */
+
 .label {
   font-weight: bold;
 }
@@ -27,6 +82,7 @@
   float:right;
 } */
 
-.createBurger{
+/* .createBurger{
   clear: both;
-}
+  margin:0px auto; 
+} */
