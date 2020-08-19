@@ -75,12 +75,9 @@ margin: 0 auto;
 
 #notdevoured{
   float:left;
-  margin-right: 300px;
+ margin-right: 300px;
 }
 
-/* #devoured{
-  float:right;
-} */
 
 /* .createBurger{
   clear: both;
