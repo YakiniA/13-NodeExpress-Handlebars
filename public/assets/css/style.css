@@ -1,85 +1,25 @@
-/* li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
-} */
-
-/* body {
-  background-image: url("pictureburger.jpg");
-  /* background-size: cover; */
-  /* background-position:center; */
- /* background-size: auto;
-  background-repeat: no-repeat; 
-} */
-
   
-.img-responsive{
+.pictures{
   margin-top: 5%;
-  margin-right: 2%;
-  height: 100%; 
+  margin-right: 2%; 
+  height: 100% !important;
 }
 
 body{
 margin: 0 auto;
+/* margin-top: 100px; */
+background-color: rgb(179, 174, 174)
 }
-
-/*.pic1{
-  float:left;
-}
-
-.pic2{
-  float:right; 
-/* } */
-
-/* body {
-  background-image:url("pictureburger4.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-
-  background-size: 20%;
-  }
-   */
-
-/* #bg{
-  position:fixed;
-  top:-50%;
-  left:-50%;
-  width:200%;
-  height:200%;
-}
-
-#bg img{
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  margin: auto;
-  min-width:50%;
-  min-height: 50%;
-} */
-
-/* .label {
-  font-weight: bold;
-} */
-
-/* .create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-} */
-
-/* .form-group {
-  margin-bottom: 5px;
-} */
 
 #notdevoured{
   float:left;
- /* margin-right: 300px; */
+  margin-right: 300px;
+} 
+
+#mainContents{
+  margin-top: 100px;
 }
 
-
-/* .createBurger{
-  clear: both;
-  margin:0px auto; 
-} */
+.createBurger{
+  margin:0 auto;
+}
