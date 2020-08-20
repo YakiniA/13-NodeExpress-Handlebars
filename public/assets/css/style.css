@@ -2,9 +2,16 @@
 .pictures{
   margin-top: 5%;
   margin-right: 2%; 
-  height: 100% !important;
+  height: 160% !important;
 }
 
+.pic1{
+  margin-left: 2%;
+}
+
+#contents{
+  font-size: 22px;
+}
 body{
 margin: 0 auto;
 /* margin-top: 100px; */
@@ -12,7 +19,7 @@ background-color: rgb(179, 174, 174)
 }
 
 #notdevoured{
-  float:left;
+  margin-left: 50px;
   margin-right: 300px;
 } 
 
@@ -20,6 +27,13 @@ background-color: rgb(179, 174, 174)
   margin-top: 100px;
 }
 
-.createBurger{
-  margin:0 auto;
+#notdevoured, #devoured{
+
+  display : inline-block;
+ 
 }
+
+h4{
+  margin-bottom:1%;
+}
+

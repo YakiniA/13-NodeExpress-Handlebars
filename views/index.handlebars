@@ -10,19 +10,19 @@
   <img src="../assets/css/burger2.jpg"  width="20%"  height= "200%" class="float-right pictures pic2" alt="pictureburger">
    
 <div id="mainContents">
-<h4 id= "notdevoured">READY!
+<span id= "notdevoured"><h4>TO DEVOUR!</h4>
 
-<ol id="contents">
+<div id="contents">
   {{#each burgerData}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=false}}
     {{/unless}}
   {{/each}}
-</ol>
-</h4>
+</div>
 
+</span>
 
-<h4 id= "devoured">DEVOURED!
+<span id= "devoured"><h4>DEVOURED!</h4>
 
 <div id="contents">
   {{#each burgerData}}
@@ -31,10 +31,11 @@
     {{/if}}
   {{/each}}
 </div> 
-</h4>
 
+</span>
 
-<div class= "createBurger">
+<br/><br/><br/><br/>
+<div align="center">
 <h2 >Add Your Burger</h2>
 {{!-- <form class="create-form">
 
