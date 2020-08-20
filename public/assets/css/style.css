@@ -2,7 +2,7 @@
 .pictures{
   margin-top: 5%;
   margin-right: 2%; 
-  height: 160% !important;
+  height: auto !important;
 }
 
 .pic1{
@@ -11,7 +11,9 @@
 
 #contents{
   font-size: 22px;
+
 }
+
 body{
 margin: 0 auto;
 /* margin-top: 100px; */
@@ -21,18 +23,19 @@ min-height: 100vh;
 padding-bottom: 60px;  
 }
 
+#mainContents{
+  margin-top: 100px;
+}
+
 #notdevoured{
   margin-left: 4%;
   margin-right: 300px;
 } 
 
-#mainContents{
-  margin-top: 100px;
-}
-
 #notdevoured, #devoured{
 
   display : inline-block;
+  
 
 }
 
@@ -55,6 +58,31 @@ footer {
 @media screen and (max-width: 1514px) {
   #notdevoured{
     margin-left: 0%;
+  }
+
+  #devoured{
+    margin-top: 2%;
+  }
+
+}
+
+@media screen and (max-width: 1093px) {
+  #notdevoured{
+    margin-left: 0%;
+  }
+  .pic1{
+    width: 45% !important;
+    margin-bottom: 50px;
+
+  }
+
+  .pic2{
+    width:45% !important;
+    margin-bottom: 50px;
+  }
+
+  #mainContents{
+    margin: 100px !important;
   }
 
 }
