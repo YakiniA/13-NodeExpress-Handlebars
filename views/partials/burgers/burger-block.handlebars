@@ -1,11 +1,10 @@
-
 {{#if devoured}}
-<div  style="width: 25%; border:1px solid black; margin-bottom: 10px; display:inline;">
+<div>
 {{id}}. {{burger_name}}<br/>
 </div>
 {{else}}
-<div  style="width: 25%; border:1px solid black; margin-right: 25px;  margin-bottom: 10px; display:inline;">
+<div style="display:inline;">
 {{id}}. {{burger_name}}
 </div>
-<button class="devourIt ml-5" data-id="{{id}}" data-newdevour="{{devoured}}">Devour It!</button><br/>
+<button class="devourIt" style="display:inline" data-id="{{id}}" data-newdevour="{{devoured}}">Devour It!</button><br/>
 {{/if}}
