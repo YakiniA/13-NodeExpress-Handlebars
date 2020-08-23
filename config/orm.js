@@ -35,12 +35,10 @@ var orm = {
       cb(result);
     });
   },
+
    create: function(table, cols, vals, cb) {
      var boolean = false;
-    console.log("Vals Name" +vals);
-    console.log("Type of Vals Name" +typeof vals)
 
-      if(vals != ""){
       var queryString = `INSERT INTO ${table} (${cols}) VALUES ('${vals}', ${boolean});`
       console.log(queryString);
       connection.query(queryString, vals, function(err, result) {
@@ -50,18 +48,7 @@ var orm = {
  
         cb(result);
       });
-      }else{
-         alert("Please enter the burger name");
-
-           $(document).ready(function () {
-            var errmsg = $("<div>").addClass("errMsg").text("Please enter the burger name");
-             $("#ca").append(errmsg);
-          });
-       }
-   
-
-      }
-   },
+      },
 
    //An example of objColVals would be {name: panther, sleepy: true}
    update: function(table, objColVals, condition, cb) {

@@ -1,6 +1,8 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
+
   $(".devourIt").on("click", function(event) {
+    event.preventDefault();
     var id = $(this).data("id");
     // var newDevour = $(this).data("newdevour");
 
@@ -29,6 +31,8 @@ $(function() {
      name: $("#ca").val().trim(),
     };
 
+  var burger = Object.keys(newBurger).map(k => newBurger[k])
+  if(burger!=""){
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",
@@ -40,5 +44,15 @@ $(function() {
         location.reload();
       }
     );
+  }else{
+      $(".errorMsg").text("Please enter the burger Name");
+  
+  }
   });
+
+  $("#ca").on("click", function(event){
+    event.preventDefault();
+    $(".errorMsg").text("");
+  });
+
 });
