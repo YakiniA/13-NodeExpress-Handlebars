@@ -49,3 +49,45 @@ npm start or node server.js
      * **id**: an auto incrementing int that serves as the primary key.
      * **burger_name**: a string.
      * **devoured**: a boolean.
+
+#### Directory structure
+
+The directory structure will be like:
+
+```
+.
+├── config
+│   ├── connection.js
+│   └── orm.js
+│ 
+├── controllers
+│   └── burgerController.js
+│
+├── db
+│   ├── schema.sql
+│   └── seed.sql
+│
+├── models
+│   └── burger.js
+│ 
+├── node_modules
+│ 
+├── package.json
+│
+├── public
+│   └── assets
+│       ├── css
+│       │   └── style.css
+│       └── js
+│           └── burgerHandleEvents.js
+│   
+│
+├── server.js
+│
+└── views
+    ├── index.handlebars
+    └── layouts
+    │    └── main.handlebars
+    └── partials/burgers
+        └── burger-block.handlebars
+```  
