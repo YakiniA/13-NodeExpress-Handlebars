@@ -108,7 +108,7 @@ The directory structure will be like:
 
 Link To the GitHub Repo : https://github.com/YakiniA/13-NodeExpress-Handlebars
 
-Link To the deployed application on Heroku : 
+Link To the deployed application on Heroku : https://evening-depths-68682.herokuapp.com/
 
 #### References
 
