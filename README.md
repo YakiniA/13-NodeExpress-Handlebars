@@ -6,11 +6,13 @@ This assignment is used for creating a burger logger with MySQL, Node, Express, 
 
 ### User Story 
 
+```
 AS A user, I want to be able to eat the burgers I like
 
 I WANT to be able to submit a burger's name, that displays the burger on the left side of the page with `Devour it!` button
 
 SO THAT I can get the burger `Devoured` by pressing the `Devour it!` button
+```
 
 
 ### Prerequisite
@@ -50,7 +52,7 @@ npm start or node server.js
      * **burger_name**: a string.
      * **devoured**: a boolean.
 
-#### Directory structure
+### Directory structure
 
 The directory structure will be like:
 
@@ -91,3 +93,25 @@ The directory structure will be like:
     └── partials/burgers
         └── burger-block.handlebars
 ```  
+
+### Challenges Faced
+
+*  At first it's very difficult to understand/handle the routes, the flow and the callbacks. After working a lot and go through the class activities helped me to figure out.
+*  The second thing is regarding the handlebars. To apply the styling for the page, to pass the data and make it work is real difficulty. After understanding the concepts in the site [Handlebars](https://handlebarsjs.com/guide/builtin-helpers.html) helped a lot.
+*  While testing came to know that it is inserting empty data value even on not providing the burger name. With the help of learning Assisstants got that issue solved.
+
+### Preview
+
+![Snapshot](public/assets/css/Snapshot.png)
+
+### Submission Links
+
+Link To the GitHub Repo : https://github.com/YakiniA/13-NodeExpress-Handlebars
+
+Link To the deployed application on Heroku : 
+
+#### References
+
+Express Handlebars : [Handlebars](https://handlebarsjs.com/guide/builtin-helpers.html)
+
+Stack Overflow : [Stack Overflow - $ not defined](https://stackoverflow.com/questions/2194992/jquery-is-not-defined)
