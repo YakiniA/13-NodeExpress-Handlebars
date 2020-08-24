@@ -112,6 +112,8 @@ Link To the deployed application on Heroku :
 
 #### References
 
-Express Handlebars : [Handlebars](https://handlebarsjs.com/guide/builtin-helpers.html)
+Express Handlebars : [Handlebars](https://handlebarsjs.com/guide/builtin-helpers.html)<br/>
 
-Stack Overflow : [Stack Overflow - $ not defined](https://stackoverflow.com/questions/2194992/jquery-is-not-defined)
+Stack Overflow : [Stack Overflow - $ not defined](https://stackoverflow.com/questions/2194992/jquery-is-not-defined)<br/>
+
+Stack Overflow : [Stack Overflow - Bootstrap Entire Width problem](https://stackoverflow.com/questions/23156830/bootstrap-3-navbar-not-full-width)
